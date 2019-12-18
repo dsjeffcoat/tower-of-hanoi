@@ -1,3 +1,5 @@
+<!-- Tower of Hanoi project by Garnetta Matthews-Lincoln and Diarte Jeffcoat -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,28 +13,51 @@
 <body>
     <h1>The Tower of Hanoi</h1>
     
+    <h2>
+        The Tower of Hanoi is a puzzle consisting of 3 rods and a stack of disks of different sizes. The puzzle starts with all the disks stacked on the first tower rod, from smallest to largest.
+    </h2>
+    <h2>
+        The objective of the puzzle is to move the entire stack to the third tower rod using the following rules:
+        <div id="ruleslist">
+        <ul>
+            <li>Only one disk can be moved at a time.</li>
+            <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.</li>
+            <li>You cannot place a larger disk on top of a smaller disk.</li>
+        </ul>
+        </div>
+    </h2>
+    <br>
+    
+    <div id="holding"></div>
+    
+    <!-- <ul id="towerlabel">
+        <li class="towername">Tower 1</li>
+        <li class="towername">Tower 2</li>
+        <li class="towername">Tower 3</li>
+    </ul> -->
+
     <div id="gamedisplay">
-        
-        <div id='tower1' class='container'>
-            <!-- <div id='disk1' class="disk" data-weight="1"></div>
-            <div id='disk2' class="disk" data-weight="2"></div>
+    
+        <div id='tower1' class='tower'>
+            <div id='disk4' class="disk" data-weight="4"></div>
             <div id='disk3' class="disk" data-weight="3"></div>
-            <div id='disk4' class="disk" data-weight="4"></div> -->
-            <div id="verttower1" class="towervert" style="left:99px;top:10px;width:3px;height:170px"></div>
-            <div id="horiztower1" class="towerhoriz" style="left:0px;top:180px;width:200px;height:2px"></div>
-            <div class="tower">TOWER 1</div>
+            <div id='disk2' class="disk" data-weight="2"></div>
+            <div id='disk1' class="disk" data-weight="1"></div>
+            <!-- <div id="verttower1" class="towervert"></div> -->
+            <!-- <div id="horiztower1" class="towerhoriz"></div> -->
         </div>
-        <div id='tower2' class='container'>
-                <div id="verttower2" class="towervert" style="left:99px;top:10px;width:3px;height:170px"></div>
-                <div id="horiztower2" class="towerhoriz" style="left:0px;top:180px;width:200px;height:2px"></div>
-                <div class="tower">TOWER 2</div>
+        <div id='tower2' class='tower'>
+                <!-- <div id="verttower2" class="towervert"></div> -->
+                <!-- <div id="horiztower2" class="towerhoriz"></div> -->
         </div>
-        <div id='tower3' class='container'>
-                <div id="verttower3" class="towervert" style="left:99px;top:10px;width:3px;height:170px"></div>
-                <div id="horiztower3" class="towerhoriz" style="left:0px;top:180px;width:200px;height:2px"></div>
-                <div class="tower">TOWER 3</div>
+        <div id='tower3' class='tower'>
+                <!-- <div id="verttower3" class="towervert"></div> -->
+                <!-- <div id="horiztower3" class="towerhoriz"></div> -->
         </div>
     </div>
+          
+    <div class="endwinningalert" id="ewa">YOU HAVE WON!!</div>
+<!-- ​<button onclick="reset()">Play Again</button> -->
     <script src="hanoi.js"></script>
 </body>
 </html>
